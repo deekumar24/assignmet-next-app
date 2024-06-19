@@ -1,0 +1,20 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 20px;
+    /* Adjust gap between columns */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+        /* One column per row on mobile */
+    }
+}
+
+.column {
+    padding: 20px;
+    /* Additional styling for columns */
+}
